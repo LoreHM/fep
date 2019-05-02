@@ -65,6 +65,12 @@ p {
 .obligatorio2{
  color: red;
 }
+
+.espcio{
+margin-top:10px;
+}
+
+
 .convertexto{
   text-transform: capitalize;;
   cursor: pointer;
