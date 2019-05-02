@@ -26,13 +26,12 @@
 				foreach ($categorias as $con) { $aux++; ?>
           <?php if ($aux_sub!=$con->id_cat) {?>
           <tr>
-            <th scope="row" class="text-left">Subtotal</th>
+            <th scope="row" class="text-right">Subtotal</th>
             <td scope="col"></td>
             <td scope="col"></td>
             <td scope="col"></td>
             <td scope="col"></td> 
             <th scope="col" class="text-right">$ <?php echo $categorias[$aux-1]->subtotal;?></th>
-            <td scope="col"></td>
             <td scope="col"></td>
           </tr>
         <?php $aux_sub = $con->id_cat; } ?>
@@ -44,7 +43,9 @@
               <td scope="col"></td>
               <td scope="col"></td>
               <td scope="col"></td> 
-              <td scope="col">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a data-toggle="modal" data-target="#modal_del_categoria" onclick="elimina_categoria(<?php echo $con->id_categoria?>)" class="icon-trash" title="Eliminar Categoría"></a></td>
+              <td scope="col">
+               <div class="text-center"><a data-toggle="modal" data-target="#modal_del_categoria" onclick="elimina_categoria(<?php echo $con->id_categoria?>)" class="icon-trash" title="Eliminar Categoría"></a></div> 
+              </td>
             </tr>
           <?php $aux_cat=$con->id_cat; } ?>
 				<tr>
@@ -54,12 +55,16 @@
 					<td scope="col"><?php echo $con->volumen;?></td>
 					<td scope="col">$ <?php echo $con->costo_unitario;?></td>
 					<td scope="col">$ <?php echo $con->total;?></td>
-					<td scope="col"><a href="<?php echo base_url();?>memory_calc/update_concept_mc/<?php echo $con->id;?>" )" class="icon-refresh" title="Editar Concepto de Memoria de Costo"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-					<a title=" Eliminar Concepto de Memoria de Costos"  data-toggle="modal" data-target="#modal_del_concepto" onclick="elimina(<?php echo $con->id;?>)"  class="icon-trash"  ></a></td>
+					<td scope="col">
+            <div class="text-center"> <!--editadoddd-->
+            <a href="<?php echo base_url();?>memory_calc/update_concept_mc/<?php echo $con->id;?>" )" class="icon-refresh" title="Editar Concepto de Memoria de Costo"></a>
+					<a title=" Eliminar Concepto de Memoria de Costos"  data-toggle="modal" data-target="#modal_del_concepto" onclick="elimina(<?php echo $con->id;?>)"  class="icon-trash"  ></a>
+          </div>
+        </td>
 				</tr>
 			<?php } ?>
       <tr>
-            <th scope="row" class="text-left"> Subtotal</th>
+            <th scope="row" class="text-right"> Subtotal</th>
             <td scope="col"></td>
             <td scope="col"></td>
             <td scope="col"></td>
