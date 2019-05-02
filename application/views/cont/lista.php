@@ -15,7 +15,7 @@
 	<table class="table table-responsive-lg table-bordered ">
 			<thead class="text-center" >
 				<tr class="text-center">
-					<th colspan="100%">Lista de Alumnos <a href="#" data-toggle="modal" data-target="#modal_add_alumno" class="icono" style="float: right;" title="Agregar un alumno a la lista"><span class="icon-plus" ></span></a></th>
+					<th colspan="100%">Lista de Alumnos <a href="#" data-toggle="modal" data-target="#modal_add_alumno" class="icono" style="float: right;" title="Agregar un Alumno a la Lista"><span class="icon-plus" ></span></a></th>
 				</tr>
 				<tr>
 					<th>Número</th>
