@@ -7,7 +7,7 @@
   <table class="table table-striped table-hover table-bordered table-responsive-lg text-center">
     <thead class="text-center">
       <tr>
-        <th colspan="100%">Lista de Profesores <a class="icon-plus" href="<?php echo base_url();?>admin/new_professor"style="float: right;" title="Agregar un profesor a la lista"></a></th>
+        <th colspan="100%">Lista de Profesores <a class="icon-plus" href="<?php echo base_url();?>admin/new_professor"style="float: right;" title="Agregar un Profesor a la Lista"></a></th>
       </tr>
       <tr>
         <th>Número</th>
@@ -15,7 +15,7 @@
         <th>Nombre</th>
         <th>Apellido Paterno</th>
         <th>Apellido Materno</th>
-        <th></th>
+        <th>Opciones</th>
       </tr>
     </thead>
     <tbody>
