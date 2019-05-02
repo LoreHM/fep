@@ -53,7 +53,9 @@
         <td scope="col"><?php echo $f->socios; ?></td>
         <?php $total_concepto = $f->programas + $f->socios; ?>
         <td scope="col"><?php echo $total_concepto;?></td>
-       <td colspan="2"><a href="#" data-toggle="modal" data-target="#modificar_fijo<?=$f->id;?>" class="icon-refresh"title="  Editar Activo Fijo"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    <a data-toggle="modal"  data-target="#eliminar_fijo<?php echo $f->id;?>" class="icon-trash" title="Eliminar Activo Fijo"></a></td> <!--se agrega la clase para el icono modificar-->
+       <td colspan="2">
+        <div class="text-center">
+        <a href="#" data-toggle="modal" data-target="#modificar_fijo<?=$f->id;?>" class="icon-refresh"title="  Editar Activo Fijo"></a><a data-toggle="modal"  data-target="#eliminar_fijo<?php echo $f->id;?>" class="icon-trash" title="Eliminar Activo Fijo"></a></div></td> <!--se agrega la clase para el icono modificar-->
 
         <?php //modal modificar?>
 
@@ -197,7 +199,11 @@
         <td scope="col"><?php echo $d->socios; ?></td>
         <?php $total_concepto = $d->programas + $d->socios; ?>
         <td scope="col"><?php echo $total_concepto;?></td>
-        <td colspan="2"><a data-toggle="modal" href="#" data-target="#modificar_diferido<?=$d->id;?>" class="icon-refresh" title="Editar Activo Diferido"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a data-toggle="modal"  data-target="#eliminar_diferido<?=$d->id;?>" title="Eliminar Activo Diferido" class="icon-trash"></a></td>
+        <td colspan="2">
+          <div class="text-center">
+          <a data-toggle="modal" href="#" data-target="#modificar_diferido<?=$d->id;?>" class="icon-refresh" title="Editar Activo Diferido"></a><a data-toggle="modal"  data-target="#eliminar_diferido<?=$d->id;?>" title="Eliminar Activo Diferido" class="icon-trash"></a>
+          </div>
+        </td>
         <!--Se agrega la clase para los iconos en la etiqueta a-->
 
         <?php //modal modificar?>
