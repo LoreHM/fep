@@ -7,24 +7,24 @@
             <h2 style="text-align: center;">Datos de Usuario</h2>
             <hr>
           </div>
-          <div  style="margin-left: 10px;">
+          <div  style="margin-left: 5px;">
             Usuario
           </div>
         
-      <div class="card col-md-auto" style="margin: 10px;">
+      <div class="card col-md-auto" style="margin: 5px; padding: 6px;">
              <?php  echo $user->matricula?>
           </div>
-           <div  style="margin-left: 10px;">
+           <div  style="margin-left: 5px; padding: 6px;">
             Rol del profesor
           </div>
           
-          <div class="card col-md-auto" style="margin: 10px;">
+          <div class="card col-md-auto" style="margin: 5px; padding: 6px;">
             Profesor
           </div>
-           <div  style="margin-left: 10px;">
+           <div  style="margin-left: 5px; padding: 6px;">
              Nombre
           </div>
-          <div class="card col-md-auto" style="margin: 10px;">          
+          <div class="card col-md-auto" style="margin: 5px; padding: 6px;">          
           <?php  echo $user->nombres?> <?php  echo $user->apellido_paterno?> <?php  echo $user->apellido_materno?>
         </div>
 

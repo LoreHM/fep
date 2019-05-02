@@ -344,7 +344,11 @@
         <td scope="col"><?php echo $c->socios; ?></td>
         <?php $total_concepto = $c->programas + $c->socios; ?>
         <td scope="col"><?php echo $total_concepto;?></td>
-        <td colspan="2"><a data-toggle="modal" href="#" data-target="#modificar_capital<?=$c->id;?>" class="icon-refresh" title="Editar Capital de Trabajo"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <a data-toggle="modal"  data-target="#eliminar_capital<?=$c->id;?>" title="Eliminar Capital de Trabajo" class="icon-trash"></a></td>
+        <td colspan="2">
+          <div class="text-center">
+          <a data-toggle="modal" href="#" data-target="#modificar_capital<?=$c->id;?>" class="icon-refresh" title="Editar Capital de Trabajo"></a> <a data-toggle="modal"  data-target="#eliminar_capital<?=$c->id;?>" title="Eliminar Capital de Trabajo" class="icon-trash"></a>
+          </div>
+        </td>
         <!--se afrega la clase para el icono modifcar y eliminar-->
       </tr>
         <?php //modal modificar?>

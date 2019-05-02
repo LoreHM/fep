@@ -31,8 +31,10 @@
 							<td><?php echo $alumno->nombres;?> <?php echo $alumno->apellido_paterno;?> <?php  echo $alumno->apellido_materno?></td>
 							<td><?php echo $alumno->matricula;?></td>
 							<td>
-                <a class="icono" href="<?php echo base_url()?>professor/update_student/<?php echo $alumno->id;?>/<?php echo $alumno->grupo;?>"><span class="icon-refresh" title="Actualizar Información"></span></a>
-                <span class="icono icon-trash" title="Eliminar Alumno" data-toggle="modal" data-target="#modal_del_alumno" onclick="elimina_alumno(<?php echo $alumno->id;?>,<?php echo $alumno->grupo;?>)"></span>
+                <div class="text-center">
+                <a href="<?php echo base_url()?>professor/update_student/<?php echo $alumno->id;?>/<?php echo $alumno->grupo;?>" class="icon-refresh" title="Actualizar alumno"></a>
+                <a class="icon-trash" title="Eliminar Alumno" data-toggle="modal" data-target="#modal_del_alumno" onclick="elimina_alumno(<?php echo $alumno->id;?>,<?php echo $alumno->grupo;?>)"></a>
+              </div>
               </td>
 						</tr>
 					<?php }?>

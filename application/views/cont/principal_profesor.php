@@ -18,7 +18,7 @@
 	<table class="table table-striped table-hover table-bordered table-responsive-lg ">
 		<thead class="text-center">
 			<tr class="text-center">
-				<th colspan="100%">Lista de Grupos <a href="#" data-toggle="modal" data-target="#modal_add_grupo" class="icono" style="float:right;" title="Agregar un Grupo"><span class="icon-plus"></span></a></th>
+				<th colspan="100%">Lista de Grupos <a href="#" data-toggle="modal" data-target="#modal_add_grupo" style="float:right;" title="Agregar un Grupo"><span class="icon-plus"></span></a></th>
 			</tr>
 			<tr>
 				<th>Número</th>
@@ -36,8 +36,10 @@
 						<span class="icon-trash" title="Eliminar Grupo" data-toggle="modal" data-target="#modal_del_grupo" onclick="elimina(<?php echo $grupo->grupo?>)"></span>
 						  <a class="icon-views" title="Ver Alumnos del Grupo"  href="<?php echo base_url();?>professor/list_group/<?php echo $grupo->grupo;?>" ></a>
 					</td>
-					<td class="text-center">
-             <a class="icon-views" title="Ver Proyectos del Grupo" href="<?php echo base_url();?>professor/list_project/<?php echo $grupo->grupo;?>"></a></td>
+					<td>
+            <div class="text-center">
+             <a class="icon-views" title="Ver Proyectos del Grupo" href="<?php echo base_url();?>professor/list_project/<?php echo $grupo->grupo;?>"></a>
+           </div></td>
 				</tr>
 			<?php }?>
 		</tbody>
