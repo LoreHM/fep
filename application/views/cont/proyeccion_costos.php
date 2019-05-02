@@ -47,7 +47,7 @@
           <th class="text-center" colspan="100%">Proyección de Costos</th>
         </tr>
         <tr>
-          <th scope="col">Concepto <a data-toggle="modal" data-target="#modal_add_concepto" class="icon-plus" title="Agregar un concepto"></a></th>
+          <th scope="col">Concepto <a data-toggle="modal" data-target="#modal_add_concepto" class="icon-plus" title="Agregar un Concepto"></a></th>
           <th scope="col">Costo/Mes</th>
           <th scope="col">1 Año</th>
           <th scope="col">2 Años</th>
