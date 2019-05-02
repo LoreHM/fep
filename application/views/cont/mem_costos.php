@@ -15,7 +15,7 @@
 					<th scope="col">Volumen</th>
 					<th scope="col">Costo Unitario</th>
 					<th scope="col">Costo Total</th>
-					<th  colspan="2">Acciones</th>
+					<th  colspan="2">Opciones</th>
 				</tr>
 			</thead>
 			<tbody>
