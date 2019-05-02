@@ -25,7 +25,9 @@
 						<td><?php echo $proyecto->autor;?></td>
 						<td><?php echo $proyecto->matricula;?></td>
 						<td>
+							<div class="text-center">
 							 <a class="icon-views" title=" Ver Proyecto del Alumno" href=""></a>
+							 </div>
 						</td>
 					</tr>
 				<?php }?>
