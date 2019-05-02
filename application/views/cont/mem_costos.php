@@ -26,7 +26,7 @@
 				foreach ($categorias as $con) { $aux++; ?>
           <?php if ($aux_sub!=$con->id_cat) {?>
           <tr>
-            <th scope="row" class="text-right">Subtotal</th>
+            <th scope="row" class="text-left">Subtotal</th>
             <td scope="col"></td>
             <td scope="col"></td>
             <td scope="col"></td>
@@ -59,7 +59,7 @@
 				</tr>
 			<?php } ?>
       <tr>
-            <th scope="row" class="text-right"> Subtotal</th>
+            <th scope="row" class="text-left"> Subtotal</th>
             <td scope="col"></td>
             <td scope="col"></td>
             <td scope="col"></td>
