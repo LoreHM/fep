@@ -8,7 +8,7 @@
           { 
       ?>
   <a class="navbar-brand" href=""> <img class="marg_clas1" src="<?php echo base_url();?>rec/images/fep2.png"></a>
-  <span class=" navbar-brand font_tam " >Sistema dfhosfdrytrgfhgfhgjghjghjde Formulación y Evaluación del Proyecto</span>
+  <span class=" navbar-brand font_tam " >Sistema de Formulación y Evaluación de Proyecto</span>
 
    <?php
           }
@@ -39,7 +39,7 @@
           { 
       ?>
 <li class="nav-item">     
-          <span class=" icon-user" title="Usuario" style="cursor:pointer;">
+          <span class=" icon-user" title="Usuario" >
             <?php //muestra el nombre de usuario
               print($this->session->userdata('usuario'));
             ?>
@@ -65,7 +65,7 @@
             { 
         ?>     
         <li class="nav-item">     
-          <span class=" icon-user" title="Usuario" style="cursor:pointer;">
+          <span class=" icon-user" title="Usuario">
             <?php //muestra el nombre de usuario
               print($this->session->userdata('usuario'));
             ?>
@@ -88,7 +88,7 @@
           else{
       ?>
       <li class="nav-item">     
-          <span class=" icon-user" title="Usuario" style="cursor:pointer;">
+          <span class=" icon-user" title="Usuario" >
             <?php //muestra el nombre de usuario
               print($this->session->userdata('usuario'));
             ?>
@@ -96,14 +96,14 @@
     <li class="nav-item dropdown  ">
           <a  class=" text-white nav-link dropdown-toggle menuses "  data-toggle="dropdown"  href="<?php echo base_url();?>">Proyecto</a>
           <div class="dropdown-menu">
-              <a class=" navbarra menuses" title="Modificar Nombre del  Proyecto" data-toggle="modal" data-target="#modificar_proyecto" style="cursor:pointer; ">Modificar Nombre del Proyecto</a>
+              <a class=" navbarra menuses" title="Modificar Nombre del  Proyecto" data-toggle="modal" data-target="#modificar_proyecto" style="cursor:pointer; ">Modificar Nombre</a>
               <a class="navbarra menuses" title="Borrar todo el Proyecto" style="cursor:pointer; " data-toggle="modal" data-target="#borrar_proyecto">Borrar</a>
           </div>
       </li>        
 
 
         <li class="nav-item">
-          <a class="nav-user menuses" title="Modificar Contraseña" data-toggle="modal" data-target="#al_pass" style="cursor:pointer;">
+          <a class=" navbarra menuses" title="Modificar Contraseña" data-toggle="modal" data-target="#al_pass" style="cursor:pointer;">
             Modificar Contraseña
           </a>
         </li>

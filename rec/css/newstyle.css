@@ -14,7 +14,7 @@
 }
 
 .btn-boton:hover{
-	background-color: #28a745;
+	background-color: #138d75;
 	color: white
 	border: 2px #28a745 solid;
 }
@@ -86,7 +86,7 @@ p {
 }
 .navbarra:active
 {
-  background-color: #28a745;
+  background-color: #138d75;
 
 }
 

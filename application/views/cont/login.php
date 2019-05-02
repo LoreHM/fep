@@ -13,8 +13,8 @@
 
         <form class="" action="<?php echo base_url();?>access" method="post">
          
-           <h6 class="font_tam text-center" >Sistema de Formulación y Evaluación de Proyectos</h6>  
-           <h5 class="text-center" >Capture el usuario y contraseña</h5>
+           <h6 class="font_tam text-center" >Sistema de Formulación y Evaluación de Proyectos</h6> <br> 
+           <h6 class="text-center" style="text-align: center;" >Ingrese el Usuario y Contraseña</h6>
           <hr>
           <?php
             if($this->session->flashdata('flash'))
